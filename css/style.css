@@ -1,0 +1,239 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a{
+    color: #e2e2e2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brading{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: -30px;
+}
+
+header .highlight,
+header .current a{
+    color: orangered;
+    font-weight: bold;
+}
+
+header a:hover{
+    background-color: orangered;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Banner */
+#banner{
+    min-height: 400px;
+    background: url('../images/banner.jpg') no-repeat 0 -400px;
+    text-align: center;
+}
+
+#banner h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#banner p{
+    font-size: 20px;
+}
+
+/* Services */
+
+#services{
+    margin-top: 20px;
+}
+
+#services h1{
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 5px solid orangered;
+}
+
+#services .service{
+    float:left;
+    width:30%;
+    text-align: center;
+    padding: 10px;
+}
+
+#services .service img{
+    width: 90px;
+}
+
+/* Profiles */
+
+#profiles{
+    margin-top: 20px;
+}
+
+#profiles h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#profiles button{
+    background-color: orangered;
+    padding:8px;
+    border: none;
+    border-radius: 5px;
+}
+
+#profiles button a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#profiles .profile{
+    background-color: #d3d3d3;
+    padding: 50px;
+    margin: 15px 35px 5px 0px;
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+#profiles .profile img{
+    width: 200px;
+    height: 150px;
+}
+
+#profiles #btn-delete{
+    background-color:darkred;
+}
+
+#profiles #btn-edit{
+    background-color:green;
+}
+
+/* Form */
+
+#form{
+    margin-top: 30px;
+}
+
+#form #f01{
+    width: 50%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#form #f01 input[type=text]{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form #f01 input[type=submit]{
+    font-size:16px;
+    font-weight: bold;
+    width:100%;
+    background-color:orangered;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form #f01 input[type=submit]:hover{
+    background-color: black;
+    color: orangered;
+}
+
+/* footer */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #services .service,
+    #profiles .profile{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    header nav{
+        margin-top: 20px;
+    }
+    header nav a:hover{
+        font-size: 16px;
+    }
+
+    #banner h1{
+        margin-top: 40px;
+    }
+
+    #profiles #btn-new{
+        text-align: center;
+    }
+
+    #form #f01{
+        margin: 0 auto;
+        display: table;
+    }
+
+}
